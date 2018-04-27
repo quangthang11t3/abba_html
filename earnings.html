@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="abba" />
+    <meta name="keywords" content="abba" />
+    <meta name="author" content="R.I.P Team" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/smartphone.css">
+    <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="container-fluid">
+            <div id="logo"><a href="#">abba</a></div>
+            <div class="languages_login">
+                <a href="javascript:void(0)" class="languages hvr-pop vietnamese">Vietnamese</a>
+                <a href="javascript:void(0)" class="languages hvr-pop english">English</a>
+                <a class="hvr-buzz-out login" href="javascript:void(0)"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+            </div>
+        </header>
+        <div class="row outer_content_box">
+            <nav class="sidebar col-sm-3 col-md-2 col-lg-2">
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">công ty abba</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-eye-open"></span>Tổng quan</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">ứng dụng của bạn</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-list"></span>danh sách ứng dụng</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-star"></span>ứng dụng mới</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">báo cáo</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item active"><a href="#"><span class="glyphicon glyphicon-stats"></span>thu nhập</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-dashboard"></span>giao dịch</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-plus"></span>khác</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">tính năng - đặc điểm</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-gift"></span>khuyến mãi</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">tài khoản</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-user"></span>cài đặt tài khoản</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-cog"></span>cài đặt thanh toán</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-signal"></span>chi tiết thanh toán</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-envelope"></span>thông báo thư điện tử</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="inner_content_box col-sm-9 col-md-10 col-lg-10">
+                <div class="earnings">
+                    <h2><span class="glyphicon glyphicon-stats"></span>bộ lọc báo cáo</h2>
+                    <form class="form-horizontal" action="https://pub.superrewards.com/publisher/pub_report" method="get">
+                        <fieldset>
+                            <div class="row">
+                                <div class='col-sm-6'>
+                                    <div class="form-group form-group-sm">
+                                        <label class="control-label col-sm-3">Bắt đầu:</label>
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input id="startday" type='text' class="form-control" name="startday" />
+                                            <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class='col-sm-6'>
+                                    <div class="form-group form-group-sm">
+                                        <label class="control-label col-sm-3">Kết thúc:</label>
+                                        <div class='input-group date' id='datetimepicker2'>
+                                            <input id="endday" type='text' class="form-control" name="endday" />
+                                            <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group form-group-sm">
+                                        <label class="control-label col-sm-3">Handy Ngày:</label>
+                                        <div class="col-sm-9 handy_dates">
+                                            <select name="handydatesdd" id="handy-dropdown" class="form-control">
+                                                <option value="today">Today</option>
+                                                <option value="yesterday">Yesterday</option>
+                                                <option value="current_month">Current Month</option>
+                                                <option value="last_30" selected="1">Last 30 Days</option>
+                                                <option value="previous_30">Previous 30 Days</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Cập nhật" class="btn btn-primary">
+                        </fieldset>
+                    </form>
+                    <div id="tabs">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a id="tab1">Tổng quan</a></li>
+                            <li class=""><a id="tab2">Tài khoản</a></li>
+                            <li class=""><a id="tab3">Ứng dụng</a></li>
+                            <li class=""><a id="tab4">Nhà quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="contain" id="tab1C" style="display: block;">
+                        <div id="overview_wrapper" class="dataTables_wrapper no-footer">
+                            <table id="overview" class="display dataTable no-footer" cellspacing="0" width="100%" style="text-align: right; width: 100%;" role="grid" aria-describedby="overview_info">
+                                <thead>
+                                    <tr role="row">
+                                        <th scope="col" class="dt-head-left sorting_desc" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date: activate to sort column ascending" style="width: 166px;">Ngày</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 183px;">Số lượt tải ứng dụng</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 98px;">Số lần tương tác web</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 91px;">Số lần like fanpage</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 96px;">Số lần xem video</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 80px;">Số lần chia sẻ</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 138px;">Số coin đổi thưởng</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 109px;">Tổng coin kiếm được</th>
+                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 127px;">Số nhà QC hoạt động</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1">2018-04-27</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1">2018-04-26</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1">2018-04-25</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1">2018-04-24</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1">2018-04-23</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                    <tr role="row" class="even">
+                                        <td class="sorting_1">2018-04-22</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                    <tr role="row" class="odd">
+                                        <td class="sorting_1">2018-04-21</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">0</td>
+                                        <td class=" dt-body-right">0%</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">$0.00</td>
+                                        <td class=" dt-body-right">0</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot style="text-align:right">
+                                    <tr>
+                                        <td>Totals:</td>
+                                        <td>6</td>
+                                        <td>2</td>
+                                        <td>1%</td>
+                                        <td>0</td>
+                                        <td>0%</td>
+                                        <td>$0.00</td>
+                                        <td>$0.00</td>
+                                        <td>0</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="content_info">
+                    <div class="col col_1">
+                        <img src="images/logo/abba.png" width="170" height="61">
+                    </div>
+                    <div class="col col_2">
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                    </div>
+                    <div class="col col_3">
+                        <p class="phone_num">123-456-7890
+                            <br />123-456-7890</p>
+                        <p class="address">500 Terry Francois Street
+                            <br />San Francisco, CA 94158</p>
+                        <div class="social">
+                            <a href="#" class="hvr-pop"><img class="ic_facebook" src="images/icon/ic_facebook_white.png" width="20" height="20"></a>
+                            <a href="#" class="hvr-pop"><img class="ic_twitter" src="images/icon/ic_twitter_white.png" width="20" height="20"></a>
+                            <a href="#" class="hvr-pop"><img class="ic_googleplus" src="images/icon/ic_googleplus_white.png" width="20" height="20"></a>
+                            <a href="#" class="hvr-pop"><img class="ic_youtube" src="images/icon/ic_youtube_white.png" width="20" height="20"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2018 Abba. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/canvasjs.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/earnings.js"></script>
+</body>
+
+</html>

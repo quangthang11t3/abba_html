@@ -1,0 +1,214 @@
+/*=========================
+common
+=========================*/
+
+.outer_content_box {
+    margin: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 6px;
+}
+
+.inner_content_box {
+    background-color: #fff;
+    border-radius: 6px;
+    border: solid 1px #ddd;
+    margin: 6px 0;
+    padding: 20px 15px;
+    min-height: 610px;
+}
+
+span.glyphicon {
+    font-size: 85%;
+    margin-right: 10px;
+}
+
+
+
+/*=========================
+header
+=========================*/
+
+.dashboard #logo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.dashboard #logo a {
+    display: inline-block;
+    width: 170px;
+    height: 61px;
+    font-size: 0;
+    background: url(../images/logo/abba.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.dashboard .languages_login {
+    display: inline-block;
+    float: right;
+    margin-top: 30px;
+}
+
+
+/*=========================
+sidebar
+=========================*/
+
+.dashboard .sidebar {
+    padding: 0;
+}
+
+.dashboard a:hover,
+.dashboard a:focus {
+    text-decoration: none;
+}
+
+.sidebar_tab_item a {
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    border: solid 1px #f3f3f3;
+    transition: background-color 0.3s;
+}
+
+.sidebar_tab_item.active a,
+.sidebar_tab_item:hover a {
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border: solid 1px #ddd;
+    border-right: none;
+    /*font-weight: bold;*/
+    position: relative;
+}
+
+.sidebar_tab_item.active a:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -1px;
+    width: 1px;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.dashboard .sidebar span.glyphicon {
+    margin-right: 10px;
+}
+
+.sidebar_tab_ttl {
+    text-transform: uppercase;
+}
+
+
+
+/*=========================
+main
+=========================*/
+
+
+/*overview*/
+
+.dashboard h2 {
+    color: #555;
+    font-size: 18px;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+.dashboard .dashboard_tri_feature_box_top {
+    text-align: center;
+    background: #9ed683;
+    ;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: 4px;
+}
+
+.dashboard_tri_feature_box_top div {
+    padding: 10px 12px;
+}
+
+.dashboard_tri_feature_box_top div span {
+    font-size: 36px;
+}
+
+.dashboard_tri_feature_box_bottom_left {
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+
+.dashboard_tri_feature_box_bottom_left div {
+    background: #e5f6dd;
+    border-bottom-left-radius: 6px;
+    margin-right: 2px;
+}
+
+.dashboard_tri_feature_box_bottom_left div div,
+.dashboard_tri_feature_box_bottom_right div div {
+    padding: 10px 12px;
+    line-height: 24px;
+}
+
+.dashboard_tri_feature_box_bottom_left div div span,
+.dashboard_tri_feature_box_bottom_right div div span {
+    font-size: 22px;
+}
+
+.dashboard_tri_feature_box_bottom_right {
+    text-align: center;
+    float: right;
+    width: 50%;
+}
+
+.dashboard_tri_feature_box_bottom_right div {
+    background: #e5f6dd;
+    border-bottom-right-radius: 6px;
+    margin-left: 2px;
+}
+
+.dashboard .canvasjs-chart-credit {
+    display: none;
+}
+
+#chartEarnings {
+    position: relative;
+}
+
+#chartEarnings:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background-color: #ffffff;
+}
+
+.dashboard .chartEarnings_wrap {
+    margin-top: 30px;
+}
+
+
+/*earnings*/
+.handy_dates {
+  padding: 0;
+}
+
+.earnings .form-horizontal .form-group-sm .control-label {
+    text-align: left;
+}
+
+.earnings #tabs {
+  margin-top: 30px;
+}
+
+.earnings #overview_length,
+.earnings #overview_filter {
+  display: none;
+}

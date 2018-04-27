@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="abba" />
+    <meta name="keywords" content="abba" />
+    <meta name="author" content="R.I.P Team" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/hover-min.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/smartphone.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="container-fluid">
+            <div id="logo"><a href="#">abba</a></div>
+            <div class="languages_login">
+                <a href="javascript:void(0)" class="languages hvr-pop vietnamese">Vietnamese</a>
+                <a href="javascript:void(0)" class="languages hvr-pop english">English</a>
+                <a class="hvr-buzz-out login" href="javascript:void(0)"><span class="glyphicon glyphicon-log-out"></span>Logout</a>
+            </div>
+        </header>
+        <div class="row outer_content_box">
+            <nav class="sidebar col-sm-3 col-md-2 col-lg-2">
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">công ty abba</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item active"><a href="#"><span class="glyphicon glyphicon-eye-open"></span>Tổng quan</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">ứng dụng của bạn</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-list"></span>danh sách ứng dụng</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-star"></span>ứng dụng mới</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">báo cáo</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-stats"></span>thu nhập</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-dashboard"></span>giao dịch</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-plus"></span>khác</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">tính năng - đặc điểm</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-gift"></span>khuyến mãi</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar_item">
+                    <h4 class="sidebar_tab_ttl">tài khoản</h4>
+                    <ul class="sidebar_tab">
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-user"></span>cài đặt tài khoản</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-cog"></span>cài đặt thanh toán</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-signal"></span>chi tiết thanh toán</a></li>
+                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-envelope"></span>thông báo thư điện tử</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="inner_content_box col-sm-9 col-md-10 col-lg-10">
+                <div class="overview">
+                    <div class="col-xs-12 col-md-6">
+                        <h2 class="text-center"><span class="glyphicon glyphicon-time"></span> Daily Earnings</h2>
+                        <div class="dashboard_tri_feature_box_top">
+                            <div><span>$0</span>
+                                <br>Today</div>
+                        </div>
+                        <div class="dashboard_tri_feature_box_bottom_left">
+                            <div>
+                                <div><span>$0</span>
+                                    <br>Yesterday</div>
+                            </div>
+                        </div>
+                        <div class="dashboard_tri_feature_box_bottom_right">
+                            <div>
+                                <div><span>$0</span>
+                                    <br>Today Last Week</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <h2 class="text-center"><span class="glyphicon glyphicon-calendar"></span> Monthly Earnings</h2>
+                        <div class="dashboard_tri_feature_box_top">
+                            <div><span>$0</span>
+                                <br>Month to Date</div>
+                        </div>
+                        <div class="dashboard_tri_feature_box_bottom_left">
+                            <div>
+                                <div><span>$0</span>
+                                    <br>Last Pay Period</div>
+                            </div>
+                        </div>
+                        <div class="dashboard_tri_feature_box_bottom_right">
+                            <div>
+                                <div><span>$0</span>
+                                    <br>This Pay Period</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chartEarnings_wrap col-xs-12">
+                        <h2 class="text-center">Earnings History</h2>
+                        <div id="chartEarnings" style="height: 370px; width: 100%;"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <div class="content_info">
+                    <div class="col col_1">
+                        <img src="images/logo/abba.png" width="170" height="61">
+                    </div>
+                    <div class="col col_2">
+                        <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
+                    </div>
+                    <div class="col col_3">
+                        <p class="phone_num">123-456-7890<br />123-456-7890</p>
+                        <p class="address">500 Terry Francois Street<br />San Francisco, CA 94158</p>
+                        <div class="social">
+                            <a href="#" class="hvr-pop"><img class="ic_facebook" src="images/icon/ic_facebook_white.png" width="20" height="20"></a>
+                            <a href="#" class="hvr-pop"><img class="ic_twitter" src="images/icon/ic_twitter_white.png" width="20" height="20"></a>
+                            <a href="#" class="hvr-pop"><img class="ic_googleplus" src="images/icon/ic_googleplus_white.png" width="20" height="20"></a>
+                            <a href="#" class="hvr-pop"><img class="ic_youtube" src="images/icon/ic_youtube_white.png" width="20" height="20"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2018 Abba. All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/canvasjs.min.js"></script>
+    <script src="js/overview.js"></script>
+</body>
+
+</html>
+

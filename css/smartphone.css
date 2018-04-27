@@ -1,0 +1,466 @@
+@media screen and (max-width: 1049px) {
+    /*-----------------
+common
+-----------------*/
+    .container {
+        width: 100%;
+    }
+
+    #homepage header .nav .container {
+        padding: 25px 15px;
+    }
+
+    #homepage .intro .container,
+    #homepage main .container,
+    #homepage .container {
+        padding: 0 15px;
+    }
+
+    #homepage header {
+        min-width: 100%;
+        /*margin-top: 65px;*/
+        height: 625px;
+    }
+
+    #header_video {
+        height: 625px;
+    }
+
+    #homepage .main_nav {
+        margin-left: 0;
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    #logo {
+        position: absolute;
+        top: 8px;
+        left: 30px;
+    }
+
+    #logo a {
+        width: 130px;
+        height: 46px;
+    }
+
+    .main_nav .main_menu .menu_link {
+        padding: 8px 20px;
+    }
+
+    .main_menu.drop_menu .menu_inner_wrap .menu_inner {
+        text-align: left;
+    }
+
+    .main_menu.drop_menu .menu_inner_wrap.open {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .main_menu.drop_menu .menu_inner_wrap.open .menu_inner {
+        text-align: center;
+    }
+
+    #homepage .intro .container .intro_ttl {
+        font-size: 38px;
+    }
+
+    #homepage .intro .container:before {
+        width: 380px;
+        height: 469px;
+        top: -5px;
+        right: 30px;
+    }
+
+    #homepage .intro .container:after {
+        width: 180px;
+        height: 326px;
+        top: 178px;
+        right: 350px;
+    }
+
+    #homepage .intro {
+        margin-top: 80px;
+    }
+
+    #homepage .intro .container .btn_down {
+        margin-top: 25px;
+    }
+
+    #advertiser {
+        padding: 110px 0 60px;
+    }
+
+    #developer,
+    #documentitaion,
+    #saying {
+        padding: 60px 0;
+    }
+
+    #about,
+    #beintouch {
+        padding: 60px 0 40px;
+    }
+
+    #homepage main .container {
+        padding:
+    }
+
+    #about .about_col .col_1 .phone_1,
+    #about .about_col .col_1 .phone_2 {
+        width: 180px;
+        height: 326px;
+    }
+
+    #saying .saying_col .col {
+        padding: 0 20px;
+    }
+
+    #saying .saying_cnt {
+        padding: 25px 22px;
+    }
+
+    #homepage header .nav.fixed .main_menu.drop_menu .menu_inner_wrap {
+        padding-top: 9px;
+    }
+
+    #homepage header .nav.fixed .container {
+        padding: 15px 15px 20px;
+    }
+
+    #footer .content_info {
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+
+    #homepage header .nav.active .container {
+        padding: 30px 15px;
+    }
+
+    #homepage section p {
+        font-size: 14px;
+    }
+
+    #logo {
+        left: auto;
+    }
+
+    #homepage header .nav.active #logo {
+        display: none;
+    }
+
+    /*#homepage header .nav {
+        position: relative;
+    }*/
+    #homepage header .nav {
+        position: static;
+    }
+
+    #homepage header .nav.active {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(15, 41, 60, 1);
+        ;
+        z-index: 100;
+    }
+
+
+    #homepage .main_nav,
+    .languages_login {
+        display: none;
+    }
+
+    #homepage header .nav.active .languages_login {
+        display: block;
+        text-align: left;
+    }
+
+    #homepage header .nav.active .languages_login .login {
+        position: absolute;
+        /*top: 370px;*/
+        bottom: 0;
+        left: calc(50% - 33px);
+    }
+
+    #homepage header .nav.active .main_nav {
+        margin-left: 0;
+        margin-top: 30px;
+        display: block;
+        text-align: center;
+    }
+
+    .languages_login {
+        text-align: center;
+    }
+    /*    #homepage header .nav .container {
+           padding: 75px 15px 0;
+    }*/
+    .main_nav .main_menu {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #menu_sp_wrap {
+        display: inline-block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 101;
+    }
+
+    #menu_sp {
+        display: inline-block;
+        width: 40px;
+        height: 30px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    #menu_sp span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #ffffff;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    #menu_sp span:nth-child(1) {
+        top: 0px;
+    }
+
+    #menu_sp span:nth-child(2),
+    #menu_sp span:nth-child(3) {
+        top: 12px;
+    }
+
+    #menu_sp span:nth-child(4) {
+        top: 24px;
+    }
+
+    #menu_sp.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+    #menu_sp.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    #menu_sp.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    #menu_sp.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+    }
+
+
+    #homepage .intro .container:before {
+        width: 190px;
+        height: 234px;
+        top: 180px;
+        right: 15px;
+    }
+
+    #homepage .intro .container:after {
+        width: 100px;
+        height: 181px;
+        top: 257px;
+        right: 160px;
+    }
+
+    #homepage .intro .container .intro_ttl {
+        font-size: 34px;
+    }
+
+    #homepage header,
+    #header_video {
+        height: 527px;
+    }
+
+    .section_ttl {
+        font-size: 26px;
+        margin-bottom: 14px;
+    }
+
+    #advertiser {
+        padding: 55px 0 40px;
+    }
+
+    #developer,
+    #documentitaion,
+    #saying {
+        padding: 35px 0;
+    }
+
+    .section_summary {
+        margin-bottom: 25px;
+    }
+
+    #developer .developer_col {
+        display: block;
+    }
+
+    #developer .developer_col .col {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    #developer .developer_col .col:last-child {
+        margin-bottom: 0;
+    }
+
+    #developer i {
+        margin-bottom: 10px;
+    }
+
+    #developer .col_ttl {
+        margin-bottom: 15px;
+    }
+
+    #about .about_col .col_1 {
+        width: 60%;
+    }
+
+    #about .about_col .col_1 {
+        width: 40%;
+    }
+
+    #about .about_col .col_1 .phone_1,
+    #about .about_col .col_1 .phone_2 {
+        width: 90px;
+        height: 181px;
+    }
+
+    #about .about_col .col_1 .phone_1 {
+        top: 20px;
+        left: 36px;
+    }
+
+    #about .about_col .col_1 .phone_2 {
+        top: 0;
+        left: 0;
+    }
+
+    .col_ttl {
+        font-size: 24px !important;
+        line-height: 1;
+    }
+
+    #about .about_col .col {
+        width: 100%;
+    }
+
+    #about .about_col {
+        display: block;
+    }
+
+    #about,
+    #beintouch {
+        padding: 35px 0 30px;
+    }
+    #about .about_col .col_2 div {
+        margin-bottom: 30px;
+    }
+
+    #about .about_col .col_2 div:last-child {
+        margin-bottom: 0;
+    }
+
+    #about .section_ttl {
+        padding: 30px 0;
+    }
+
+    #about .section_ttl {
+        padding: 35px 0 40px 145px;
+    }
+
+    #saying .saying_col {
+        display: block;
+    }
+
+    #saying .saying_cnt {
+        margin-bottom: 15px;
+    }
+
+    #saying .saying_col .col {
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    #saying .saying_rating {
+        margin-bottom: 3px;
+    }
+
+    #saying .saying_cnt:after {
+        border-width: 10px;
+        margin-left: -10px;
+    }
+
+    #beintouch .contact_form {
+        width: 100%;
+    }
+
+    #footer {
+        padding: 30px 0 20px;
+    }
+
+    #footer .content_info {
+        display: block;
+    }
+
+    #footer .content_info .col_1 {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #footer .content_info .col_2 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .gototop {
+        bottom: 45px;
+    }
+
+    #homepage header .nav.fixed .container {
+        padding: 15px 15px 46px;
+    }
+}

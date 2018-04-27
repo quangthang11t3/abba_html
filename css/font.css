@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'titillium_webbold';
+    src: url('../fonts/titilliumweb-bold.woff2') format('woff2'),
+         url('../fonts/titilliumweb-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'glacial_indifferenceregular';
+    src: url('../fonts/glacialindifference-regular.woff2') format('woff2'),
+    url('../fonts/glacialindifference-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

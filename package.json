@@ -1,0 +1,26 @@
+{
+  "name": "frontend-project-japan",
+  "version": "1.0.0",
+  "description": "Project Japan",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "daodc",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "grunt": "^0.4.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-livereload": "^0.1.2",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
