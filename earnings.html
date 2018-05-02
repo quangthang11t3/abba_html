@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="./css/hover-min.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/dashboard.css">
     <link rel="stylesheet" href="./css/smartphone.css">
     <link rel="stylesheet" href="./css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="./css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="./css/glyphicons.css">
 </head>
 
 <body>
@@ -71,17 +72,19 @@
             <main class="inner_content_box col-sm-9 col-md-10 col-lg-10">
                 <div class="earnings">
                     <h2><span class="glyphicon glyphicon-stats"></span>bộ lọc báo cáo</h2>
-                    <form class="form-horizontal" action="https://pub.superrewards.com/publisher/pub_report" method="get">
+                    <form class="form-horizontal" action="" method="get">
                         <fieldset>
                             <div class="row">
                                 <div class='col-sm-6'>
                                     <div class="form-group form-group-sm">
-                                        <label class="control-label col-sm-3">Bắt đầu:</label>
-                                        <div class='input-group date' id='datetimepicker1'>
-                                            <input id="startday" type='text' class="form-control" name="startday" />
-                                            <span class="input-group-addon">
-                                                    <span class="glyphicon glyphicon-calendar"></span>
-                                            </span>
+                                        <div class="row">
+                                            <label class="control-label col-sm-3">Bắt đầu:</label>
+                                            <div class='input-group date col-sm-9' id='datetimepicker1'>
+                                                <input id="startday" type='text' class="form-control" name="startday" />
+                                                <span class="input-group-addon">
+                                                        <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -118,124 +121,254 @@
                             <input type="submit" value="Cập nhật" class="btn btn-primary">
                         </fieldset>
                     </form>
-                    <div id="tabs">
-                        <ul class="nav nav-tabs">
-                            <li class="active"><a id="tab1">Tổng quan</a></li>
+                    <!-- <div id="tabs"> -->
+                  <!--       <ul class="nav nav-tabs">
+                            <li class="navactive"><a id="tab1">Tổng quan</a></li>
                             <li class=""><a id="tab2">Tài khoản</a></li>
                             <li class=""><a id="tab3">Ứng dụng</a></li>
                             <li class=""><a id="tab4">Nhà quảng cáo</a></li>
-                        </ul>
-                    </div>
-                    <div class="contain" id="tab1C" style="display: block;">
-                        <div id="overview_wrapper" class="dataTables_wrapper no-footer">
-                            <table id="overview" class="display dataTable no-footer" cellspacing="0" width="100%" style="text-align: right; width: 100%;" role="grid" aria-describedby="overview_info">
-                                <thead>
-                                    <tr role="row">
-                                        <th scope="col" class="dt-head-left sorting_desc" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date: activate to sort column ascending" style="width: 166px;">Ngày</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 183px;">Số lượt tải ứng dụng</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 98px;">Số lần tương tác web</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 91px;">Số lần like fanpage</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 96px;">Số lần xem video</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 80px;">Số lần chia sẻ</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 138px;">Số coin đổi thưởng</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 109px;">Tổng coin kiếm được</th>
-                                        <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 127px;">Số nhà QC hoạt động</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">2018-04-27</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">2018-04-26</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">2018-04-25</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">2018-04-24</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">2018-04-23</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                    <tr role="row" class="even">
-                                        <td class="sorting_1">2018-04-22</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                    <tr role="row" class="odd">
-                                        <td class="sorting_1">2018-04-21</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">0</td>
-                                        <td class=" dt-body-right">0%</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">$0.00</td>
-                                        <td class=" dt-body-right">0</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot style="text-align:right">
-                                    <tr>
-                                        <td>Totals:</td>
-                                        <td>6</td>
-                                        <td>2</td>
-                                        <td>1%</td>
-                                        <td>0</td>
-                                        <td>0%</td>
-                                        <td>$0.00</td>
-                                        <td>$0.00</td>
-                                        <td>0</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
+                        </ul> -->
+
+                 
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                          <div class="contain" id="tab1C" style="display: block;">
+                                <div id="overview_wrapper" class="dataTables_wrapper no-footer">
+                                    <table id="overview" class="display dataTable no-footer" cellspacing="0" width="100%" style="text-align: right; width: 100%;" role="grid" aria-describedby="overview_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th scope="col" class="dt-head-left sorting_desc" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date: activate to sort column ascending" style="width: 166px;">Ngày</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 183px;">Số lượt tải ứng dụng</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 98px;">Số lần tương tác web</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 91px;">Số lần like fanpage</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 96px;">Số lần xem video</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 80px;">Số lần chia sẻ</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 138px;">Số coin đổi thưởng</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 109px;">Tổng coin kiếm được</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 127px;">Số nhà QC hoạt động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-27</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2018-04-26</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-25</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2018-04-24</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-23</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2018-04-22</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-21</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot style="text-align:right">
+                                            <tr>
+                                                <td>Totals:</td>
+                                                <td>6</td>
+                                                <td>2</td>
+                                                <td>1%</td>
+                                                <td>0</td>
+                                                <td>0%</td>
+                                                <td>$0.00</td>
+                                                <td>$0.00</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                          <div class="contain" id="tab2C">
+                                <div id="overview_wrapper" class="dataTables_wrapper no-footer">
+                                    <table id="overview" class="display dataTable no-footer" cellspacing="0" width="100%" style="text-align: right; width: 100%;" role="grid" aria-describedby="overview_info">
+                                        <thead>
+                                            <tr role="row">
+                                                <th scope="col" class="dt-head-left sorting_desc" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" aria-sort="descending" aria-label="Date: activate to sort column ascending" style="width: 166px;">Ngày</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 183px;">Số lượt tải ứng dụng</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 98px;">Số lần tương tác web</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 91px;">Số lần like fanpage</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 96px;">Số lần xem video</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 80px;">Số lần chia sẻ</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 138px;">Số coin đổi thưởng</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 109px;">Tổng coin kiếm được</th>
+                                                <th scope="col" class="dt-head-right dt-body-right sorting" tabindex="0" aria-controls="overview" rowspan="1" colspan="1" style="width: 127px;">Số nhà QC hoạt động</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-27</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2018-04-26</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-25</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2018-04-24</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-23</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="even">
+                                                <td class="sorting_1">2018-04-22</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                            <tr role="row" class="odd">
+                                                <td class="sorting_1">2018-04-21</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">0</td>
+                                                <td class=" dt-body-right">0%</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">$0.00</td>
+                                                <td class=" dt-body-right">0</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot style="text-align:right">
+                                            <tr>
+                                                <td>Totals:</td>
+                                                <td>6</td>
+                                                <td>2</td>
+                                                <td>1%</td>
+                                                <td>0</td>
+                                                <td>0%</td>
+                                                <td>$0.00</td>
+                                                <td>$0.00</td>
+                                                <td>0</td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
                     </div>
                 </div>
             </main>

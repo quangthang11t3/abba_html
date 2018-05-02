@@ -1,6 +1,10 @@
 /*=========================
 common
 =========================*/
+body {
+    font-family: inherit;
+}
+
 
 .outer_content_box {
     margin: 10px;
