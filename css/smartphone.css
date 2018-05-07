@@ -2,7 +2,7 @@
     /*-----------------
 common
 -----------------*/
-    .container {
+    #homepage .container {
         width: 100%;
     }
 
@@ -101,10 +101,6 @@ common
     #about,
     #beintouch {
         padding: 60px 0 40px;
-    }
-
-    #homepage main .container {
-        padding:
     }
 
     #about .about_col .col_1 .phone_1,

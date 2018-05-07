@@ -22,7 +22,7 @@ common
     display: table;
 }
 
-body {
+body #homepage {
     font-family: glacial_indifferenceregular;
 }
 
