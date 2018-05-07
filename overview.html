@@ -28,6 +28,25 @@
             </div>
         </header>
         <div class="row outer_content_box">
+            <div class="left_nav_dropdown">
+                <form>
+                    <fieldset>
+                        <select class="form-control" name="nav_locations">
+                            <option value="./overview.html" selected=""><span class="glyphicon glyphicon-eye-open"></span>Tổng quan</option>
+                            <option value="">Danh sách ứng dụng</option>
+                            <option value="">Ứng dụng mới</option>
+                            <option value="">Thu nhập</option>
+                            <option value="">Giao dịch</option>
+                            <option value="">Khác</option>
+                            <option value="">Khuyến mãi</option>
+                            <option value="">Cài đặt tài khoản</option>
+                            <option value="">Cài đặt thanh toán</option>
+                            <option value="">Chi tiết thanh toán</option>
+                            <option value="">Thông báo thư điện tử</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
             <nav class="sidebar col-sm-3 col-md-2 col-lg-2">
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">công ty abba</h4>
@@ -67,7 +86,7 @@
                 </div>
             </nav>
             <main class="inner_content_box col-sm-9 col-md-10 col-lg-10">
-                <div class="overview">
+                <div class="overview clearfix">
                     <div class="col-xs-12 col-md-6">
                         <h2 class="text-center"><span class="glyphicon glyphicon-time"></span> Daily Earnings</h2>
                         <div class="dashboard_tri_feature_box_top">
@@ -108,7 +127,7 @@
                     </div>
                     <div class="chartEarnings_wrap col-xs-12">
                         <h2 class="text-center">Earnings History</h2>
-                        <div id="chartEarnings" style="height: 370px; width: 100%;"></div>
+                        <div id="chartEarnings"></div>
                     </div>
                 </div>
             </main>
@@ -123,8 +142,10 @@
                         <p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.</p>
                     </div>
                     <div class="col col_3">
-                        <p class="phone_num">123-456-7890<br />123-456-7890</p>
-                        <p class="address">500 Terry Francois Street<br />San Francisco, CA 94158</p>
+                        <p class="phone_num">123-456-7890
+                            <br />123-456-7890</p>
+                        <p class="address">500 Terry Francois Street
+                            <br />San Francisco, CA 94158</p>
                         <div class="social">
                             <a href="#" class="hvr-pop"><img class="ic_facebook" src="images/icon/ic_facebook_white.png" width="20" height="20"></a>
                             <a href="#" class="hvr-pop"><img class="ic_twitter" src="images/icon/ic_twitter_white.png" width="20" height="20"></a>
@@ -137,10 +158,8 @@
                     <p>&copy; 2018 Abba. All Rights Reserved.</p>
                 </div>
             </div>
-
         </footer>
     </div>
-
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/canvasjs.min.js"></script>
@@ -148,4 +167,3 @@
 </body>
 
 </html>
-
