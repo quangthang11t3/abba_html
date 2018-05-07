@@ -15,5 +15,5 @@ $(document).ready(function() {
         });
     });
 
-    $('#overview, #account , #app, #adver').DataTable();
+    $('#overview, #app, #adver').DataTable();
 });

@@ -25,6 +25,10 @@ span.glyphicon {
 }
 
 
+
+
+
+
 /*=========================
 header
 =========================*/
@@ -51,9 +55,17 @@ header
 }
 
 
+
+
+
+
 /*=========================
 sidebar
 =========================*/
+
+.left_nav_dropdown {
+    display: none;
+}
 
 .dashboard .sidebar {
     padding: 0;
@@ -101,6 +113,10 @@ sidebar
 .sidebar_tab_ttl {
     text-transform: uppercase;
 }
+
+
+
+
 
 
 
@@ -176,6 +192,8 @@ main
 
 #chartEarnings {
     position: relative;
+    height: 370px;
+    width: 100%;
 }
 
 #chartEarnings:after {
@@ -194,20 +212,83 @@ main
 }
 
 
+
+
 /*earnings*/
+
 .handy_dates {
-  padding: 0;
+    padding: 0;
 }
 
-.earnings .form-horizontal .form-group-sm .control-label {
-    text-align: left;
+.dataTable_cnt {
+    margin-top: 30px;
 }
 
-.earnings #tabs {
-  margin-top: 30px;
+.earnings .dataTables_length,
+.earnings .dataTables_filter,
+.earnings .dataTables_info,
+.earnings .dataTables_paginate {
+    display: none;
 }
 
-.earnings #overview_length,
-.earnings #overview_filter {
-  display: none;
+table.dataTable thead th.dt-head-left {
+    text-align: right;
+}
+
+
+
+
+/*@media query*/
+
+@media screen and (max-width: 1049px) {
+    .outer_content_box {
+        margin: 50px 10px 10px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    /*=========================
+    header
+    =========================*/
+    .dashboard #logo a {
+        width: 130px;
+        height: 46px;
+    }
+
+
+    .left_nav_dropdown {
+        display: block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #chartEarnings {
+        height: 200px;
+    }
+
+    .outer_content_box {
+        padding: 10px 6px;
+    }
+
+    .inner_content_box {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .outer_content_box {
+        margin: 30px 10px 10px;
+    }
+
+    .dashboard #logo a {
+        width: 100px;
+        height: 35px;
+    }
+
+    .login {
+    padding: 5px 7px;
+}
 }
