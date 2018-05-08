@@ -31,18 +31,18 @@
             <div class="left_nav_dropdown">
                 <form>
                     <fieldset>
-                        <select class="form-control" name="nav_locations">
-                            <option value="./overview.html" selected=""><span class="glyphicon glyphicon-eye-open"></span>Tổng quan</option>
-                            <option value="">Danh sách ứng dụng</option>
-                            <option value="">Ứng dụng mới</option>
-                            <option value="">Thu nhập</option>
-                            <option value="">Giao dịch</option>
-                            <option value="">Khác</option>
-                            <option value="">Khuyến mãi</option>
-                            <option value="">Cài đặt tài khoản</option>
-                            <option value="">Cài đặt thanh toán</option>
-                            <option value="">Chi tiết thanh toán</option>
-                            <option value="">Thông báo thư điện tử</option>
+                        <select class="form-control" onchange="location = this.value;" name="nav_locations">
+                            <option selected value="overview.html">Tổng quan</option>
+                            <option value="app_list.html">Danh sách ứng dụng</option>
+                            <option value="new_app.html">Ứng dụng mới</option>
+                            <option value="earnings.html">Thu nhập</option>
+                            <option value="exchange.html">Giao dịch</option>
+                            <option value="other.html">Khác</option>
+                            <option value="promotion.html">Khuyến mãi</option>
+                            <option value="account_setting.html">Cài đặt tài khoản</option>
+                            <option value="payment_setting.html">Cài đặt thanh toán</option>
+                            <option value="payment_deatail.html">Chi tiết thanh toán</option>
+                            <option value="email_notice.html">Thông báo thư điện tử</option>
                         </select>
                     </fieldset>
                 </form>
@@ -51,37 +51,37 @@
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">công ty abba</h4>
                     <ul class="sidebar_tab">
-                        <li class="sidebar_tab_item active"><a href="#"><span class="glyphicon glyphicon-eye-open"></span>Tổng quan</a></li>
+                        <li class="sidebar_tab_item active"><a href="overview.html"><span class="glyphicon glyphicon-eye-open"></span>Tổng quan</a></li>
                     </ul>
                 </div>
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">ứng dụng của bạn</h4>
                     <ul class="sidebar_tab">
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-list"></span>danh sách ứng dụng</a></li>
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-star"></span>ứng dụng mới</a></li>
+                        <li class="sidebar_tab_item"><a href="app_list.html"><span class="glyphicon glyphicon-list"></span>danh sách ứng dụng</a></li>
+                        <li class="sidebar_tab_item"><a href="new_app.html"><span class="glyphicon glyphicon-star"></span>ứng dụng mới</a></li>
                     </ul>
                 </div>
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">báo cáo</h4>
                     <ul class="sidebar_tab">
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-stats"></span>thu nhập</a></li>
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-dashboard"></span>giao dịch</a></li>
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-plus"></span>khác</a></li>
+                        <li class="sidebar_tab_item"><a href="earnings.html"><span class="glyphicon glyphicon-stats"></span>thu nhập</a></li>
+                        <li class="sidebar_tab_item"><a href="exchange.html"><span class="glyphicon glyphicon-dashboard"></span>giao dịch</a></li>
+                        <li class="sidebar_tab_item"><a href="other.html"><span class="glyphicon glyphicon-plus"></span>khác</a></li>
                     </ul>
                 </div>
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">tính năng - đặc điểm</h4>
                     <ul class="sidebar_tab">
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-gift"></span>khuyến mãi</a></li>
+                        <li class="sidebar_tab_item"><a href="promotion.html"><span class="glyphicon glyphicon-gift"></span>khuyến mãi</a></li>
                     </ul>
                 </div>
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">tài khoản</h4>
                     <ul class="sidebar_tab">
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-user"></span>cài đặt tài khoản</a></li>
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-cog"></span>cài đặt thanh toán</a></li>
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-signal"></span>chi tiết thanh toán</a></li>
-                        <li class="sidebar_tab_item"><a href="#"><span class="glyphicon glyphicon-envelope"></span>thông báo thư điện tử</a></li>
+                        <li class="sidebar_tab_item"><a href="account_setting.html"><span class="glyphicon glyphicon-user"></span>cài đặt tài khoản</a></li>
+                        <li class="sidebar_tab_item"><a href="payment_setting.html"><span class="glyphicon glyphicon-cog"></span>cài đặt thanh toán</a></li>
+                        <li class="sidebar_tab_item"><a href="payment_deatail.html"><span class="glyphicon glyphicon-signal"></span>chi tiết thanh toán</a></li>
+                        <li class="sidebar_tab_item"><a href="email_notice.html"><span class="glyphicon glyphicon-envelope"></span>thông báo thư điện tử</a></li>
                     </ul>
                 </div>
             </nav>

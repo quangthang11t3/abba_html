@@ -212,9 +212,7 @@ main
 }
 
 
-
-
-/*earnings*/
+/*inner_content_box*/
 
 .handy_dates {
     padding: 0;
@@ -224,10 +222,10 @@ main
     margin-top: 30px;
 }
 
-.earnings .dataTables_length,
-.earnings .dataTables_filter,
-.earnings .dataTables_info,
-.earnings .dataTables_paginate {
+.dataTables_length,
+.dataTables_filter,
+.dataTables_info,
+.dataTables_paginate {
     display: none;
 }
 
@@ -273,7 +271,15 @@ table.dataTable thead th.dt-head-left {
     }
 
     .inner_content_box {
-        padding: 20px 0;
+        padding: 20px 10px;
+    }
+
+    .reset_mg {
+        margin: 0;
+    }
+
+    .dataTables_wrapper {
+        overflow-x: scroll;
     }
 }
 

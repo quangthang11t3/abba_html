@@ -15,5 +15,7 @@ $(document).ready(function() {
         });
     });
 
-    $('#overview, #app, #adver').DataTable();
+    $('#user, #adver').DataTable({
+        responsive: true
+    });
 });
