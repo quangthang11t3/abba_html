@@ -30,6 +30,25 @@
             </div>
         </header>
         <div class="row outer_content_box">
+            <div class="left_nav_dropdown">
+                <form>
+                    <fieldset>
+                        <select class="form-control" onchange="location = this.value;" name="nav_locations">
+                            <option value="overview.html">Tổng quan</option>
+                            <option value="app_list.html">Danh sách ứng dụng</option>
+                            <option value="new_app.html">Ứng dụng mới</option>
+                            <option value="earnings.html">Thu nhập</option>
+                            <option value="exchange.html">Giao dịch</option>
+                            <option selected value="other.html">Khác</option>
+                            <option value="promotion.html">Khuyến mãi</option>
+                            <option value="account_setting.html">Cài đặt tài khoản</option>
+                            <option value="payment_setting.html">Cài đặt thanh toán</option>
+                            <option value="payment_deatail.html">Chi tiết thanh toán</option>
+                            <option value="email_notice.html">Thông báo thư điện tử</option>
+                        </select>
+                    </fieldset>
+                </form>
+            </div>
             <nav class="sidebar col-sm-3 col-md-2 col-lg-2">
                 <div class="sidebar_item">
                     <h4 class="sidebar_tab_ttl">công ty abba</h4>
@@ -69,11 +88,11 @@
                 </div>
             </nav>
             <main class="inner_content_box col-sm-9 col-md-10 col-lg-10">
-                <div class="earnings">
+                <div class="other">
                     <h2><span class="glyphicon glyphicon-stats"></span>bộ lọc báo cáo</h2>
                     <form class="form-horizontal" action="https://pub.superrewards.com/publisher/pub_report" method="get">
                         <fieldset>
-                            <div class="row">
+                            <div class="row reset_mg">
                                 <div class='col-sm-6'>
                                     <div class="form-group form-group-sm">
                                         <label class="control-label col-sm-3">Bắt đầu:</label>
@@ -86,7 +105,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row reset_mg">
                                 <div class='col-sm-6'>
                                     <div class="form-group form-group-sm">
                                         <label class="control-label col-sm-3">Kết thúc:</label>
@@ -99,7 +118,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row reset_mg">
                                 <div class="col-sm-6">
                                     <div class="form-group form-group-sm">
                                         <label class="control-label col-sm-3">Handy Ngày:</label>
