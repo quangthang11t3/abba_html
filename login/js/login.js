@@ -6,10 +6,4 @@ $(document).ready(function() {
                 y: window.innerHeight / 4.2
             }
         });
-
-        $('.selectpicker').selectpicker({
-           style: 'btn-info',
-           size: 4
-         });
-
     });

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="./login/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="./login/css/bootstrap-formhelpers.min.css">
     <link rel="stylesheet" href="./login/css/login.css">
 </head>
 
@@ -46,7 +46,7 @@
                                     <div class="input-group">
                                         <div class="checkbox">
                                             <label>
-                                                <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                                <input id="login-remember" type="checkbox" name="remember" value="1">Remember me
                                             </label>
                                         </div>
                                     </div>
@@ -54,6 +54,9 @@
                                         <!-- Button -->
                                         <div class="col-sm-12 controls">
                                             <a id="btn-login" href="#" class="btn btn-success"><span style="margin-right: 10px" class="glyphicon glyphicon-log-in" aria-hidden="true"></span>Login</a>
+                                        </div>
+                                        <div class="col-md-offset-9 col-md-3">
+                                            <button id="btn-signup" type="submit" class="btn btn-info"><span style="margin-right: 10px" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>Sign Up</button>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -95,7 +98,7 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input required type="re_password" class="form-control" name="re_passwd" placeholder="Retype your password">
+                                            <input required type="password" class="form-control" name="re_passwd" placeholder="Retype your password">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -103,19 +106,16 @@
                                             <input required type="re_password" class="form-control" name="re_passwd" placeholder="Your company name">
                                         </div>
                                     </div>
-                                    <div class="input-group">
+                                    <div class="form-group">
                                         <div class="col-md-12">
-                                            <select class="selectpicker countrypicker"></select>
-                                           <!--  <select class="selectpicker countrypicker"
-                                                data-live-search="true"
-                                                data-default="United States"
-                                                data-flag="true">
-                                            </select> -->
+                                            <p style="font-size: 13px; padding-left: 5px;">Select your country:</p>
+                                            <select id="countries_phone1" class="form-control bfh-countries" data-flags="true" data-country="US"></select>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-md-12">
-                                            <input required type="re_password" class="form-control" name="re_passwd" placeholder="Your telephone number">
+                                            <p style="font-size: 13px; padding-left: 5px;">Your telephone number:</p>
+                                            <input type="text" class="form-control bfh-phone" data-country="countries_phone1">
                                         </div>
                                     </div>
                                     <div class="input-group">
@@ -129,7 +129,7 @@
                                     <div class="form-group" style="margin-top:20px;">
                                         <!-- Button -->
                                         <div class="col-md-offset-9 col-md-3">
-                                            <button id="btn-signup" type="button" class="btn btn-info"><span style="margin-right: 10px" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>Sign Up</button>
+                                            <button id="btn-signup" type="submit" class="btn btn-info"><span style="margin-right: 10px" class="glyphicon glyphicon-hand-right" aria-hidden="true"></span>Sign Up</button>
                                         </div>
                                     </div>
                                 </form>
@@ -145,9 +145,7 @@
     <script src="./login/js/yii.activeForm.js"></script>
     <script src="./login/js/utility.js"></script>
     <script src="./login/js/canvasbg.js"></script>
-    <script src="./login/js/canvasbg.js"></script>
-    <script src="./login/js/countrypicker.min.js"></script>
-    <script src="./login/js/bootstrap-select.js"></script>
+    <script src="./login/js/bootstrap-formhelpers.min.js"></script>
     <script src="./login/js/login.js"></script>
 </body>
 
