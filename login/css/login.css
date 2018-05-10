@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+}
+
+.external-page #main {
+    overflow: hidden;
+    background: url(../../images/gallery/bg_login.jpg) no-repeat top center #2d494d;
+    min-height: 100%;
+}
+
+.external-page #canvas-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.external-page #content .panel {
+    box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.3);
+}
+
+.external-page #content .panel-heading {
+    padding: 32px 10px 15px;
+}
